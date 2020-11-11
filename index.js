@@ -65,7 +65,7 @@ function animBot() {
 }
 
 function play() {
-  if (selec == "") {
+  if (selec === "") {
     alertNt();
   } else {
     result.innerHTML = "Generando resultado";
@@ -83,7 +83,7 @@ function play() {
 
     let interval = setInterval(function rotar() {
       aux++;
-      if (index == 0) {
+      if (index === 0) {
         botImg.src = "img/paper.png";
         result.innerHTML = "Generando resultado.";
         animBot();
@@ -111,7 +111,7 @@ function play() {
 function random() {
   let x = Math.floor(Math.random() * 3);
 
-  if (x == 0) {
+  if (x === 0) {
     botImg.src = "img/paper.png";
     if (selec == "Paper") {
       result.innerHTML = "¡Empate!";
