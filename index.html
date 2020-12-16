@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>¡Papel, piedra, tijera!</title>
     <link rel="icon" href="img/ico.png" sizes="32x32" />
     <link rel="stylesheet" href="css/bulma.css" />
     <link rel="stylesheet" href="css/all.css" />
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <script src="bgmenu.js"></script>
 </head>
 
@@ -16,7 +16,7 @@
     <nav class="navbar is-dark is-transparent">
         <div class="navbar-brand">
             <a class="navbar-item" href="https://ismaqo.github.io">
-                <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                <img src="img/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28" />
             </a>
             <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                 <span></span>
@@ -26,7 +26,6 @@
         </div>
 
         <div id="navbarExampleTransparentExample" class="navbar-menu">
-
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="field is-grouped">
@@ -37,9 +36,7 @@
                                 <span class="icon">
                                     <i class="fab fa-github"></i>
                                 </span>
-                                <span>
-                                    Código
-                                </span>
+                                <span> Código </span>
                             </a>
                         </p>
                         <p class="control">
@@ -57,10 +54,8 @@
     </nav>
     <section class="section">
         <div class="container">
-            <h1 class="title has-text-centered">
-                ¡Piedra, papel, tijera!
-            </h1>
-            <hr>
+            <h1 class="title has-text-centered">¡Piedra, papel, tijera!</h1>
+            <hr />
             <article class="message is-danger" id="alert">
                 <div class="message-header">
                     <p>Alerta</p>
@@ -73,10 +68,12 @@
             <div class="box">
                 <div class="tile is-ancestor">
                     <div class="tile is-vertical is-12">
-                        <div class="tile  is-parent">
+                        <div class="tile is-parent">
                             <article class="tile is-child notification has-text-centered has-background-white">
                                 <p class="title has-text-link">Resultado:</p>
-                                <p class="subtitle" id="result">Pulsa 'Jugar' para comenzar</p>
+                                <p class="subtitle" id="result">
+                                    Pulsa 'Jugar' para comenzar
+                                </p>
                                 <div class="content">
                                     <!-- Content -->
                                 </div>
@@ -86,7 +83,9 @@
                             <div class="tile is-parent">
                                 <article class="tile has-background-white is-child notification has-text-centered">
                                     <p class="title">¿Qué sacas?</p>
-                                    <p class="subtitle has-text-grey">Elige: papel, piedra o tijera</p>
+                                    <p class="subtitle has-text-grey">
+                                        Elige: papel, piedra o tijera
+                                    </p>
 
                                     <form>
                                         <button id="btnPaper" type="button"
@@ -94,50 +93,63 @@
                                             onclick="selecPaper();">
                                             <span class="icon">
                                                 <i class="fa fa-hand-paper"></i>
-                                            </span> <span>Papel</span></button>
-                                        <br>
+                                            </span>
+                                            <span>Papel</span>
+                                        </button>
+                                        <br />
                                         <button id="btnRock" type="button"
                                             class="button is-medium is-fullwidth is-dark is-outlined is-rounded"
                                             onclick="selecRock();">
                                             <span class="icon">
                                                 <i class="fa fa-hand-rock"></i>
-                                            </span> <span>Piedra</span></button>
-                                        <br>
+                                            </span>
+                                            <span>Piedra</span>
+                                        </button>
+                                        <br />
                                         <button id="btnScissor" type="button"
                                             class="button is-medium is-fullwidth is-dark is-outlined is-rounded"
                                             onclick="selecScissor();">
                                             <span class="icon">
                                                 <i class="fa fa-hand-scissors"></i>
-                                            </span> <span>Tijera</span></button>
+                                            </span>
+                                            <span>Tijera</span>
+                                        </button>
                                     </form>
 
-                                    <hr>
+                                    <hr />
                                     <button id="btnPlay" type="button" class="button is-small is-link is-rounded"
-                                        onclick="play();"> <span class="icon">
+                                        onclick="play();">
+                                        <span class="icon">
                                             <i class="fa fa-play"></i>
-                                        </span> <span>Jugar</span></button>
-                                    <button id="btnReset" type="button" class="button is-small is-link is-light is-rounded"
-                                        onclick="reset();"> <span class="icon">
+                                        </span>
+                                        <span>Jugar</span>
+                                    </button>
+                                    <button id="btnReset" type="button"
+                                        class="button is-small is-link is-light is-rounded" onclick="reset();">
+                                        <span class="icon">
                                             <i class="fa fa-redo"></i>
-                                        </span> <span>Reiniciar</span></button>
-
+                                        </span>
+                                        <span>Reiniciar</span>
+                                    </button>
                                 </article>
                             </div>
-                            <div class="tile is-parent" >
+                            <div class="tile is-parent">
                                 <article class="tile has-text-centered is-child notification" id="userCard">
                                     <p class="title">Humano</p>
-                                    <p class="subtitle">Ganadas: <span id="userWins">0</span></p>
+                                    <p class="subtitle">
+                                        Ganadas: <span id="userWins">0</span>
+                                    </p>
                                     <figure class="image">
-                                        <img src="img/user.png" id="userImg">
+                                        <img src="img/user.png" id="userImg" />
                                     </figure>
                                 </article>
                             </div>
-                            <div class="tile is-parent ">
+                            <div class="tile is-parent">
                                 <article class="tile has-text-centered is-child notification" id="botCard">
                                     <p class="title">BOT</p>
                                     <p class="subtitle">Ganadas: <span id="botWins">0</span></p>
                                     <figure class="image">
-                                        <img src="img/bot.png" id="botImg">
+                                        <img src="img/bot.png" id="botImg" />
                                     </figure>
                                 </article>
                             </div>
